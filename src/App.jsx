@@ -1,34 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Navigate, Route, Routes } from 'react-router-dom'
+import { AllCoursesPage } from './pages/AllCoursesPage'
+import { CheckoutPage } from './pages/CheckoutPage'
+import { CourseDetailsPage } from './pages/CourseDetailsPage'
+import { CourseWatchPage } from './pages/CourseWatchPage'
+import { DashboardPage } from './pages/DashboardPage'
+import { HomePage } from './pages/HomePage'
+import { InstructorProfilePage } from './pages/InstructorProfilePage'
+import { SignInPage } from './pages/SignInPage'
+import { SignUpPage } from './pages/SignUpPage'
+import { routes } from './siteData'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Routes>
+      <Route path={routes.home.path} element={<HomePage />} />
+      <Route path={routes.courses.path} element={<AllCoursesPage />} />
+      <Route path={routes.courseDetails.path} element={<CourseDetailsPage />} />
+      <Route path={routes.watch.path} element={<CourseWatchPage />} />
+      <Route path={routes.instructor.path} element={<InstructorProfilePage />} />
+      <Route path={routes.dashboard.path} element={<DashboardPage />} />
+      <Route path={routes.checkout.path} element={<CheckoutPage />} />
+      <Route path={routes.signIn.path} element={<SignInPage />} />
+      <Route path={routes.signUp.path} element={<SignUpPage />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
   )
 }
 

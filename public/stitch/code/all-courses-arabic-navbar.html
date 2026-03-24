@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Tajawal:wght@400;500;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', 'Tajawal', sans-serif;
+            background-color: #fdf8ff;
+        }
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+        }
+        .editorial-shadow {
+            box-shadow: 0px 12px 32px rgba(28, 25, 45, 0.06);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "surface": "#fdf8ff",
+                "surface-container-lowest": "#ffffff",
+                "surface-bright": "#fdf8ff",
+                "on-surface": "#1c192d",
+                "primary": "#4228ad",
+                "surface-variant": "#e6dffa",
+                "error": "#ba1a1a",
+                "secondary": "#854a79",
+                "inverse-on-surface": "#f4eeff",
+                "tertiary-container": "#983a5d",
+                "inverse-surface": "#312e43",
+                "on-secondary-container": "#7c4271",
+                "on-error": "#ffffff",
+                "surface-container-low": "#f7f1ff",
+                "on-tertiary-fixed": "#3e001d",
+                "surface-container-high": "#ebe5ff",
+                "on-surface-variant": "#484553",
+                "error-container": "#ffdad6",
+                "surface-container": "#f1ebff",
+                "primary-fixed-dim": "#c8bfff",
+                "secondary-fixed-dim": "#f8b0e6",
+                "on-primary-fixed-variant": "#452cb0",
+                "on-secondary-fixed": "#370432",
+                "surface-dim": "#ddd6f2",
+                "on-primary-container": "#d6ceff",
+                "on-tertiary": "#ffffff",
+                "primary-fixed": "#e5deff",
+                "secondary-container": "#feb5ec",
+                "secondary-fixed": "#ffd7f2",
+                "surface-tint": "#5d48c9",
+                "inverse-primary": "#c8bfff",
+                "background": "#fdf8ff",
+                "outline": "#787585",
+                "tertiary": "#7a2246",
+                "on-secondary": "#ffffff",
+                "on-tertiary-container": "#ffc4d4",
+                "primary-container": "#5a45c6",
+                "surface-container-highest": "#e6dffa",
+                "on-secondary-fixed-variant": "#6a3260",
+                "on-tertiary-fixed-variant": "#7e2649",
+                "tertiary-fixed-dim": "#ffb1c7",
+                "on-primary": "#ffffff",
+                "outline-variant": "#c9c4d6",
+                "on-primary-fixed": "#1a0064",
+                "tertiary-fixed": "#ffd9e2",
+                "on-error-container": "#93000a",
+                "on-background": "#1c192d"
+              },
+              fontFamily: {
+                "headline": ["Plus Jakarta Sans", "Tajawal"],
+                "body": ["Be Vietnam Pro", "Tajawal"],
+                "label": ["Be Vietnam Pro", "Tajawal"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1.5rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border-b-2 border-gradient-to-r from-violet-600 to-fuchsia-500 shadow-[0px_12px_32px_rgba(28,25,45,0.06)] font-['Plus_Jakarta_Sans','Tajawal'] antialiased text-right direction-rtl">
+<div class="flex flex-row-reverse items-center justify-between w-full px-6 py-4 max-w-8xl mx-auto">
+<div class="flex items-center gap-8 flex-row-reverse">
+<a class="text-2xl font-bold bg-gradient-to-r from-violet-700 to-fuchsia-600 bg-clip-text text-transparent" href="#">The Fluid Scholar</a>
+<div class="hidden md:flex flex-row-reverse gap-6">
+<a class="text-violet-800 dark:text-violet-300 font-bold border-b-2 border-violet-600 pb-1" href="#">الأصناف</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-violet-600 hover:bg-violet-50 dark:hover:bg-violet-900/30 transition-all duration-300" href="#">تعلمي</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-violet-600 hover:bg-violet-50 dark:hover:bg-violet-900/30 transition-all duration-300" href="#">المدربون</a>
+</div>
+</div>
+<div class="flex items-center gap-4 flex-row-reverse">
+<div class="hidden sm:flex gap-3 flex-row-reverse">
+<button class="px-6 py-2.5 rounded-2xl bg-primary text-on-primary font-semibold transition-all duration-200 scale-95 active:scale-90">اشترك مجاناً</button>
+<button class="px-6 py-2.5 rounded-2xl text-primary font-semibold hover:bg-violet-50 dark:hover:bg-violet-900/30 transition-all duration-300">تسجيل الدخول</button>
+</div>
+<button class="md:hidden p-2 text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-28 pb-20 px-6 max-w-8xl mx-auto min-h-screen">
+<!-- Header & Search -->
+<header class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div>
+<h1 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight mb-4">استكشف مسارات المعرفة</h1>
+<p class="text-on-surface-variant max-w-2xl text-lg leading-relaxed">اكتشف دورات تعليمية مصممة بعناية لتناسب طموحاتك، من التصميم الإبداعي إلى البرمجة المتقدمة.</p>
+</div>
+<div class="w-full md:w-[400px]">
+<div class="relative group">
+<input class="w-full h-14 bg-surface-container-high border-none rounded-2xl pr-14 pl-6 text-on-surface placeholder:text-outline focus:ring-2 focus:ring-primary/20 transition-all" placeholder="ماذا تريد أن تتعلم اليوم؟" type="text"/>
+<span class="material-symbols-outlined absolute right-5 top-1/2 -translate-y-1/2 text-primary" data-icon="search">search</span>
+</div>
+</div>
+</div>
+</header>
+<div class="flex flex-col lg:flex-row gap-10">
+<!-- Sleek Sidebar Filters -->
+<aside class="w-full lg:w-72 space-y-8">
+<div class="bg-surface-container-lowest p-8 rounded-2xl editorial-shadow">
+<div class="flex items-center justify-between mb-8">
+<h2 class="font-bold text-xl">تصفية النتائج</h2>
+<span class="material-symbols-outlined text-outline" data-icon="filter_list">filter_list</span>
+</div>
+<!-- Categories -->
+<div class="space-y-4 mb-8">
+<h3 class="font-bold text-sm text-on-surface-variant uppercase tracking-wider">التصنيفات</h3>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary text-sm font-medium">الكل</button>
+<button class="px-4 py-2 rounded-full bg-surface-container hover:bg-surface-variant text-on-surface-variant text-sm font-medium transition-colors">برمجة</button>
+<button class="px-4 py-2 rounded-full bg-surface-container hover:bg-surface-variant text-on-surface-variant text-sm font-medium transition-colors">تصميم</button>
+<button class="px-4 py-2 rounded-full bg-surface-container hover:bg-surface-variant text-on-surface-variant text-sm font-medium transition-colors">أعمال</button>
+</div>
+</div>
+<!-- Price Range -->
+<div class="space-y-4 mb-8">
+<h3 class="font-bold text-sm text-on-surface-variant uppercase tracking-wider">السعر</h3>
+<div class="space-y-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-5 h-5 rounded border-2 border-outline-variant group-hover:border-primary transition-colors flex items-center justify-center">
+<div class="w-2.5 h-2.5 bg-primary rounded-sm opacity-0 group-data-[active=true]:opacity-100"></div>
+</div>
+<span class="text-on-surface">دورات مجانية</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-5 h-5 rounded border-2 border-primary bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-xs" style="font-size: 16px;">check</span>
+</div>
+<span class="text-on-surface font-semibold">دورات مدفوعة</span>
+</label>
+</div>
+</div>
+<!-- Rating -->
+<div class="space-y-4">
+<h3 class="font-bold text-sm text-on-surface-variant uppercase tracking-wider">التقييم</h3>
+<div class="space-y-3">
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-secondary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.5 فأعلى</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-secondary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.0 فأعلى</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Featured Teacher Promo -->
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-tertiary to-tertiary-container p-8 text-on-tertiary">
+<div class="relative z-10">
+<p class="text-xs font-bold uppercase tracking-widest opacity-80 mb-2">كن معلماً</p>
+<h4 class="text-2xl font-bold mb-4 leading-tight">شارك معرفتك مع العالم</h4>
+<button class="bg-white text-tertiary px-6 py-2 rounded-xl font-bold text-sm hover:scale-105 transition-transform">انضم إلينا</button>
+</div>
+<div class="absolute -bottom-4 -left-4 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+</div>
+</aside>
+<!-- Course Grid Section -->
+<div class="flex-1">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<!-- Course Card 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden editorial-shadow hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-video overflow-hidden">
+<img alt="UI Design Course" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern abstract user interface design with purple elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKF2_I1sARIUbeP9Or36d-niWc-5cHywC6iXb3lVeKUWGFSDedn7BRnDjOgJv5dOkwoG7PUNPI4pSgL-97eIunLNZs8b19wFySCmw4IhXb55NIcGYMR9X-2XyK-b4mK-FjA9B2pD8D0uDDpFT89TYjnvPwK8pYXNzOZd_rbSwRUtP4-Qgk-K9WPYNa_NhB0zrOje7L4erTQ-VBZTZAPvKmP_8ubrRPl7dWddwiWR8h4MjluOZASl8UvHHjNIYQg4xvOfO80eJo8c1I"/>
+<div class="absolute top-4 left-4 glass-nav px-3 py-1 rounded-full text-sm font-bold text-primary">
+                                $89.00
+                            </div>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/80 backdrop-blur shadow-sm flex items-center justify-center text-on-surface hover:text-error transition-colors">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 bg-surface-container-high rounded-lg text-xs font-bold text-primary-container">تصميم</span>
+<div class="flex items-center gap-1 text-secondary text-sm font-bold mr-auto">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9</span>
+</div>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">الأساسيات المتقدمة في تجربة المستخدم</h3>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-slate-200">
+<img alt="Instructor" data-alt="Portrait of a smiling professional male instructor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEulFNFdJR-Q4AjZkCrCURm-OlV2NmBrAhYWOnpZroaRMlsKibbvAIGRdgqBHPaHIO1K_I4gwaxNtTZSJjU_VDq3PbTen5RLCO2GUTDOWhnkY3ZTIMxCpyGUiTHkBq4Boo32wnA0msdkctLZlkgHIS3revp-MoNmQTe5LpxuiGRiIAhS8Kuw28X6fr4dDRu0TnxifDsuS8XoLHNz5bzl9UZtDb2UMThFjGE2CKkGhSWTpDecf0d6KBEsUkgKru9rOMikPVXBJiq5aJ"/>
+</div>
+<span class="text-sm text-on-surface-variant font-medium">أحمد كمال</span>
+</div>
+</div>
+</div>
+<!-- Course Card 2 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden editorial-shadow hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-video overflow-hidden">
+<img alt="Web Dev Course" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Sleek laptop showing programming code on screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJfWqH7POcvWyj_CYzoCFtR_cYlBVUUmf3UASudeNqsb6HobB9-6YGOIRJSEW6-zRDXvD66VILAscWkB09e5-xeYdqObk04omf9JOLLK7XysKJfkiAc90IodwEWtWVr2yAwSW95msFzLVyUtrAt5-2R0XCs--07LdcWuZs7Ki4DEMYGp7Vhqu02F7FtP8B0AhQb5nO02mwNDwPgWB0MWy8lRDPPJ2PXXgcfW6hY6P4BX8lx8PYeGWW7qYqGXeuBdZwZDa2ICGgKJTk"/>
+<div class="absolute top-4 left-4 glass-nav px-3 py-1 rounded-full text-sm font-bold text-primary">
+                                مجاناً
+                            </div>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/80 backdrop-blur shadow-sm flex items-center justify-center text-on-surface hover:text-error transition-colors">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 bg-surface-container-high rounded-lg text-xs font-bold text-primary-container">تطوير</span>
+<div class="flex items-center gap-1 text-secondary text-sm font-bold mr-auto">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.7</span>
+</div>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">بناء تطبيقات الويب الحديثة بـ React</h3>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-slate-200">
+<img alt="Instructor" data-alt="Portrait of a professional female developer smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmRkEsrPa-w45C8baCiU0et6oENBsRnZCyoGAq9OmlJD-N3Hy1UZ_9rFJUBKojFeLvokoIt3HyFGea-g1yJSoQIV8cGhSCV-RggsOmsT4nbRHNyCYjhLxhxL0QctxCD44LmDblVcGBYzSN-mTe3yKCDp7VjZMYlwR5_jvc7EDkGs5N1vNdemmC5gsr8d7iPaA74lc93FONkPodN5xt-wy0hNOU6Qx-LkKOnNh3xpZCj0jEizgHEesLyS11fiZMTQcIfpCMeMr8hG69"/>
+</div>
+<span class="text-sm text-on-surface-variant font-medium">سارة محمود</span>
+</div>
+</div>
+</div>
+<!-- Course Card 3 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden editorial-shadow hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-video overflow-hidden">
+<img alt="Business Strategy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Professional meeting room with digital data visualizations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9tfrlRByn3GzW6pXkvF4xVEpdMFQqoi_JYwrGy_3OgcQK79qS_JNGzJMkUkG6b5kIaFT4MO3685M-SX0tGIC8-c-ViZF70p8byBq3niDfByys5QTN25ueB26ci_OWA614x4zZ6Zo1JwgXIUmLOLkT0osa-6wZkZQ2ai2d7nZsC3Gx038Ado4bG_yTRi4uDZAuR-ReYn5woJNSxCmLneLZXfBN_6OFhWu8TpYZappfSN4UIRUcaD2HqW47LoIe3nA8aTP2g_yMdyow"/>
+<div class="absolute top-4 left-4 glass-nav px-3 py-1 rounded-full text-sm font-bold text-primary">
+                                $120.00
+                            </div>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/80 backdrop-blur shadow-sm flex items-center justify-center text-on-surface hover:text-error transition-colors">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 bg-surface-container-high rounded-lg text-xs font-bold text-primary-container">أعمال</span>
+<div class="flex items-center gap-1 text-secondary text-sm font-bold mr-auto">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>5.0</span>
+</div>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">استراتيجيات التسويق الرقمي 2024</h3>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-slate-200">
+<img alt="Instructor" data-alt="Portrait of a confident senior business strategist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1NXDqVtaD0jTFSAeBY3CpAtsDozKXkLXEvr_1hmLnxw3Io-QDx7tLLavlHlk711aS-YUfqNh_XK-4lG4jaAxgzk4Seq3ghuaoN0AmOJcKYOMrvrsW0RdxWymYOShwH5dA9Ad5Ik06P_3xkQmt9Cx0_L9LELiOdWnJPxBWeoM4pJg1WobTqk_SGCm78Ud_f0oR-Ja7413ZCBYNLI8O5vy1FROrVqLsStLHIAd6fqlfyOxDdTI5XyaebE15BeHlE2bMkcAf7KWT85GP"/>
+</div>
+<span class="text-sm text-on-surface-variant font-medium">د. فهد العتيبي</span>
+</div>
+</div>
+</div>
+<!-- Loading Skeleton State -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden editorial-shadow p-0">
+<div class="aspect-video bg-surface-container-highest animate-pulse"></div>
+<div class="p-6 space-y-4">
+<div class="flex justify-between">
+<div class="w-20 h-6 bg-surface-container-high rounded-lg animate-pulse"></div>
+<div class="w-12 h-6 bg-surface-container-high rounded-lg animate-pulse"></div>
+</div>
+<div class="w-full h-8 bg-surface-container-high rounded-lg animate-pulse"></div>
+<div class="flex gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high animate-pulse"></div>
+<div class="w-32 h-8 bg-surface-container-high rounded-lg animate-pulse"></div>
+</div>
+</div>
+</div>
+<!-- Repeat Skeleton for density -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden editorial-shadow p-0 hidden xl:block">
+<div class="aspect-video bg-surface-container-highest animate-pulse"></div>
+<div class="p-6 space-y-4">
+<div class="flex justify-between">
+<div class="w-20 h-6 bg-surface-container-high rounded-lg animate-pulse"></div>
+<div class="w-12 h-6 bg-surface-container-high rounded-lg animate-pulse"></div>
+</div>
+<div class="w-full h-8 bg-surface-container-high rounded-lg animate-pulse"></div>
+<div class="flex gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high animate-pulse"></div>
+<div class="w-32 h-8 bg-surface-container-high rounded-lg animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden editorial-shadow p-0 hidden xl:block">
+<div class="aspect-video bg-surface-container-highest animate-pulse"></div>
+<div class="p-6 space-y-4">
+<div class="flex justify-between">
+<div class="w-20 h-6 bg-surface-container-high rounded-lg animate-pulse"></div>
+<div class="w-12 h-6 bg-surface-container-high rounded-lg animate-pulse"></div>
+</div>
+<div class="w-full h-8 bg-surface-container-high rounded-lg animate-pulse"></div>
+<div class="flex gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high animate-pulse"></div>
+<div class="w-32 h-8 bg-surface-container-high rounded-lg animate-pulse"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-16 flex items-center justify-center gap-2">
+<button class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container text-on-surface hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-xl bg-primary text-on-primary font-bold shadow-lg shadow-primary/20">1</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container text-on-surface font-bold hover:bg-surface-variant transition-all">2</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container text-on-surface font-bold hover:bg-surface-variant transition-all">3</button>
+<div class="w-8 flex justify-center text-outline">...</div>
+<button class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container text-on-surface font-bold hover:bg-surface-variant transition-all">12</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container text-on-surface hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-100">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-right direction-rtl w-full py-12 px-8 max-w-8xl mx-auto">
+<div class="space-y-4">
+<h2 class="text-xl font-bold text-slate-900">The Fluid Scholar</h2>
+<p class="text-slate-500 text-sm leading-relaxed">منصة تعليمية تهدف لتمكين العقول العربية بمهارات المستقبل من خلال تجربة تعليمية سلسة ومتميزة.</p>
+<div class="flex gap-4">
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</button>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-6">المنصة</h4>
+<ul class="space-y-4 text-slate-500 text-sm">
+<li><a class="hover:text-violet-600 underline-offset-4 hover:underline transition-colors" href="#">عن المعلم السائل</a></li>
+<li><a class="hover:text-violet-600 underline-offset-4 hover:underline transition-colors" href="#">المدونة</a></li>
+<li><a class="hover:text-violet-600 underline-offset-4 hover:underline transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-6">الدعم</h4>
+<ul class="space-y-4 text-slate-500 text-sm">
+<li><a class="hover:text-violet-600 underline-offset-4 hover:underline transition-colors" href="#">Help Center</a></li>
+<li><a class="hover:text-violet-600 underline-offset-4 hover:underline transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-violet-600 underline-offset-4 hover:underline transition-colors" href="#">Affiliate</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-6">قانوني</h4>
+<ul class="space-y-4 text-slate-500 text-sm">
+<li><a class="hover:text-violet-600 underline-offset-4 hover:underline transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-violet-600 underline-offset-4 hover:underline transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-200 py-6 text-center text-slate-400 text-xs">
+            © 2024 The Fluid Scholar. All rights reserved.
+        </div>
+</footer>
+</body></html>
