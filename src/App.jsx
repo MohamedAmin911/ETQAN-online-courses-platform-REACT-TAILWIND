@@ -5,6 +5,7 @@ import { CourseDetailsPage } from './pages/CourseDetailsPage'
 import { CourseWatchPage } from './pages/CourseWatchPage'
 import { DashboardPage } from './pages/DashboardPage'
 import { HomePage } from './pages/HomePage'
+import { InstructorsPage } from './pages/InstructorsPage'
 import { InstructorProfilePage } from './pages/InstructorProfilePage'
 import { SignInPage } from './pages/SignInPage'
 import { SignUpPage } from './pages/SignUpPage'
@@ -17,7 +18,8 @@ function App() {
       <Route path={routes.courses.path} element={<AllCoursesPage />} />
       <Route path={routes.courseDetails.path} element={<CourseDetailsPage />} />
       <Route path={routes.watch.path} element={<CourseWatchPage />} />
-      <Route path={routes.instructor.path} element={<InstructorProfilePage />} />
+      <Route path={routes.instructor.path} element={<InstructorsPage />} />
+      <Route path={`${routes.instructor.path}/:instructorId`} element={<InstructorProfilePage />} />
       <Route path={routes.dashboard.path} element={<DashboardPage />} />
       <Route path={routes.checkout.path} element={<CheckoutPage />} />
       <Route path={routes.signIn.path} element={<SignInPage />} />
