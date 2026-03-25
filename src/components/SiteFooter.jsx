@@ -23,7 +23,7 @@ export function SiteFooter({ variant = 'marketing' }) {
             <FooterColumn title="قانوني" links={['Privacy Policy', 'Terms of Service']} />
           </div>
           <div className="border-t border-slate-200 py-6 text-center text-xs text-slate-400">
-            © 2024 The Fluid Scholar. All rights reserved.
+            © 2026 ETQAN. All rights reserved.
           </div>
         </div>
       </footer>
@@ -61,7 +61,7 @@ export function SiteFooter({ variant = 'marketing' }) {
             </div>
           </div>
           <div className="mt-12 border-t border-slate-200 pt-8 text-center text-sm text-slate-400">
-            © 2024 The Fluid Scholar. جميع الحقوق محفوظة.
+            © 2026 ETQAN. جميع الحقوق محفوظة.
           </div>
         </div>
       </footer>
@@ -85,7 +85,7 @@ export function SiteFooter({ variant = 'marketing' }) {
           <FooterColumn title="قانوني" links={['Privacy Policy', 'Terms of Service']} />
         </div>
         <div className="mx-auto mt-12 max-w-7xl border-t border-slate-200 pt-8 text-center text-slate-400 dark:border-slate-800">
-          © 2024 The Fluid Scholar. All rights reserved.
+          © 2026 ETQAN. All rights reserved.
         </div>
       </footer>
     )
@@ -107,7 +107,7 @@ export function SiteFooter({ variant = 'marketing' }) {
           <FooterColumn title="الروابط السريعة" links={['عن المنصة', 'قائمة المدرسين', 'برنامج الشركاء', 'الوظائف']} />
           <FooterColumn title="الدعم والمساعدة" links={['مركز المساعدة', 'سياسة الخصوصية', 'شروط الخدمة', 'اتصل بنا']} />
           <div className="space-y-6">
-            <h4 className="font-bold">اشترك في نشرتنا</h4>
+            <h4 className="font-bold dark:text-violet-400">اشترك في نشرتنا</h4>
             <div className="relative">
               <input
                 type="email"
@@ -118,7 +118,7 @@ export function SiteFooter({ variant = 'marketing' }) {
                 ارسال
               </button>
             </div>
-            <div className="text-xs text-slate-400">© 2024 The Fluid Scholar. جميع الحقوق محفوظة.</div>
+            <div className="text-xs text-slate-400">© 2026 ETQAN. جميع الحقوق محفوظة.</div>
           </div>
         </div>
       </footer>
@@ -158,7 +158,7 @@ export function SiteFooter({ variant = 'marketing' }) {
         </div>
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-8 md:flex-row-reverse dark:border-slate-800">
           <p className="text-sm text-slate-500 dark:text-slate-400">
-            © 2024 The Fluid Scholar. All rights reserved.
+             © 2026 All rights reserved. ETQAN. 
           </p>
           <div className="flex gap-6">
             <span className="text-xs text-slate-400">صنع بشغف في العالم العربي</span>
