@@ -1,5 +1,5 @@
-import { BrandLogo } from '../../components/BrandLogo'
-import { routes } from '../../siteData'
+import { BrandLogo } from '../../../components/BrandLogo'
+import { routes } from '../../../siteData'
 
 export function HomeHeroSection({ onNavigate }) {
   return (

@@ -3,8 +3,8 @@ import { PublicTopNav } from '../../components/PublicTopNav'
 import { SiteFooter } from '../../components/SiteFooter'
 import { instructors } from '../../data/instructors'
 import { usePageSetup } from '../../hooks/usePageSetup'
-import { InstructorCard } from './InstructorCard'
-import { InstructorsPageHeader } from './InstructorsPageHeader'
+import { InstructorCard } from './components/InstructorCard'
+import { InstructorsPageHeader } from './components/InstructorsPageHeader'
 
 const pageStyles = `.material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;

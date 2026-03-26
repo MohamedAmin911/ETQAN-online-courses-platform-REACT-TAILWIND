@@ -1,4 +1,4 @@
-import { routes } from '../../siteData'
+import { routes } from '../../../siteData'
 
 export function InstructorCard({ instructor, onNavigate }) {
   return (

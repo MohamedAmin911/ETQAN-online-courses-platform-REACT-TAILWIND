@@ -1,5 +1,5 @@
-import { categoryLabels, courseCategories } from '../../data/courses'
-import { routes } from '../../siteData'
+import { categoryLabels, courseCategories } from '../../../data/courses'
+import { routes } from '../../../siteData'
 
 const priceOptions = [
   ['all', 'كل الدورات'],

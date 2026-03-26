@@ -155,7 +155,7 @@ export function PublicTopNav({
                 <button
                   type="button"
                   onClick={handlePrimaryAction}
-                  className="rounded-xl bg-gradient-to-r from-primary to-primary-container px-6 py-2.5 font-bold text-on-primary transition-all duration-200 hover:scale-95 active:scale-90"
+                  className="rounded-xl bg-linear-to-r from-primary to-primary-container px-6 py-2.5 font-bold text-on-primary transition-all duration-200 hover:scale-95 active:scale-90"
                 >
                   اشترك مجاناً
                 </button>
@@ -228,7 +228,7 @@ export function PublicTopNav({
       ) : null}
 
       <div
-        className={`h-[2px] bg-gradient-to-r from-primary via-secondary to-tertiary opacity-40 ${
+        className={`h-0.5 bg-linear-to-r from-primary via-secondary to-tertiary opacity-40 ${
           progress === 'third' ? 'w-1/3' : 'w-full'
         }`}
       />

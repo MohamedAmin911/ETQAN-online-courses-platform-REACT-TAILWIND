@@ -6,10 +6,10 @@ import { courses } from '../../data/courses'
 import { instructors } from '../../data/instructors'
 import { useAppState } from '../../hooks/useAppState'
 import { usePageSetup } from '../../hooks/usePageSetup'
-import { HomeFeaturedCoursesSection } from './HomeFeaturedCoursesSection'
-import { HomeFeaturedInstructorsSection } from './HomeFeaturedInstructorsSection'
-import { HomeHeroSection } from './HomeHeroSection'
-import { HomeStatsSection } from './HomeStatsSection'
+import { HomeFeaturedCoursesSection } from './components/HomeFeaturedCoursesSection'
+import { HomeFeaturedInstructorsSection } from './components/HomeFeaturedInstructorsSection'
+import { HomeHeroSection } from './components/HomeHeroSection'
+import { HomeStatsSection } from './components/HomeStatsSection'
 
 const pageStyles = `.material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
