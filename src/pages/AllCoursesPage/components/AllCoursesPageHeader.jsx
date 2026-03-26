@@ -3,7 +3,7 @@ export function AllCoursesPageHeader({ searchQuery, onSearchChange }) {
     <header className="mb-12">
       <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
         <div>
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight text-on-surface md:text-5xl">
+          <h1 className="mb-4 mt-10 text-4xl font-extrabold tracking-tight text-on-surface md:text-5xl">
             استكشف مسارات المعرفة
           </h1>
           <p className="max-w-2xl text-lg leading-relaxed text-on-surface-variant">
@@ -11,7 +11,7 @@ export function AllCoursesPageHeader({ searchQuery, onSearchChange }) {
             المتقدمة.
           </p>
         </div>
-        <div className="w-full md:w-[400px]">
+        <div className="w-full md:w-100">
           <div className="group relative">
             <input
               className="h-14 w-full rounded-2xl border-none bg-surface-container-high pl-6 pr-14 text-on-surface placeholder:text-outline transition-all focus:ring-2 focus:ring-primary/20"

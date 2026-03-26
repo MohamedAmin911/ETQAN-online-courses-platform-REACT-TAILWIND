@@ -1,1 +1,1 @@
-export { SignInPage } from './SignInPage/index.jsx'
+export { SignInPage } from './SignInPage/SignInPage.jsx'

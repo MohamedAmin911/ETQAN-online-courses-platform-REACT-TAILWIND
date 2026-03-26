@@ -2,47 +2,47 @@ export const routes = {
   home: {
     id: '36eceb6e7e284b72bb51d5a87e6851fe',
     path: '/',
-    title: 'Home - Arabic Navbar',
+    title: 'Home',
   },
   courses: {
     id: 'efc54318f7454d5fb73bfb1c1be05055',
     path: '/courses',
-    title: 'All Courses - Arabic Navbar',
+    title: 'Courses',
   },
   courseDetails: {
     id: 'd9d5d873f6764e70a703ca0d6dcb5698',
     path: '/courses/details',
-    title: 'Course Details - Arabic Navbar',
+    title: 'Course Details',
   },
   watch: {
     id: '29435d1d3a5045ef84286be6f0060b1b',
     path: '/watch',
-    title: 'Course Watch Page - The Fluid Scholar',
+    title: 'Course Watch',
   },
   instructor: {
     id: '50fe810d5d0149e89458bc15cf5c9d84',
     path: '/instructor',
-    title: 'Instructor Profile - The Fluid Scholar',
+    title: 'Instructor Profile',
   },
   dashboard: {
     id: '1a46a7938b7947339fb237489f00d742',
     path: '/dashboard',
-    title: 'Dashboard - Arabic Navigation',
+    title: 'Dashboard',
   },
   checkout: {
     id: '5b09914baea848b2af76bc961d987562',
     path: '/checkout',
-    title: 'Checkout - The Fluid Scholar',
+    title: 'Checkout',
   },
   signIn: {
     id: '091843e4d6484a3e8579b5c5279263c3',
     path: '/sign-in',
-    title: 'Sign In - The Fluid Scholar',
+    title: 'Sign In',
   },
   signUp: {
     id: '881a7d64460d4a8ba5a61225e4eafbe9',
     path: '/sign-up',
-    title: 'Sign Up - The Fluid Scholar',
+    title: 'Sign Up',
   },
 }
 

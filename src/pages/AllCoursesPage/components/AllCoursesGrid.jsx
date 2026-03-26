@@ -1,5 +1,5 @@
-import { categoryLabels } from '../../data/courses'
-import { routes } from '../../siteData'
+import { categoryLabels } from '../../../data/courses'
+import { routes } from '../../../siteData'
 
 function CourseCard({
   course,

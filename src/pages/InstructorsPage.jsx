@@ -1,1 +1,1 @@
-export { InstructorsPage } from './InstructorsPage/index.jsx'
+export { InstructorsPage } from './InstructorsPage/InstructorsPage.jsx'

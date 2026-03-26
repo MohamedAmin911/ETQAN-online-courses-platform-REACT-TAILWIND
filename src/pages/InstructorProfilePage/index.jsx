@@ -6,10 +6,10 @@ import { courses } from '../../data/courses'
 import { instructors } from '../../data/instructors'
 import { usePageSetup } from '../../hooks/usePageSetup'
 import { routes } from '../../siteData'
-import { InstructorCoursesSection } from './InstructorCoursesSection'
-import { InstructorProfileHero } from './InstructorProfileHero'
-import { InstructorProfileSidebar } from './InstructorProfileSidebar'
-import { InstructorTestimonialsSection } from './InstructorTestimonialsSection'
+import { InstructorCoursesSection } from './components/InstructorCoursesSection'
+import { InstructorProfileHero } from './components/InstructorProfileHero'
+import { InstructorProfileSidebar } from './components/InstructorProfileSidebar'
+import { InstructorTestimonialsSection } from './components/InstructorTestimonialsSection'
 
 const pageStyles = `.material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;

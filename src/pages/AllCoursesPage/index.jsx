@@ -5,9 +5,9 @@ import { SiteFooter } from '../../components/SiteFooter'
 import { instructors } from '../../data/instructors'
 import { useAppState } from '../../hooks/useAppState'
 import { usePageSetup } from '../../hooks/usePageSetup'
-import { AllCoursesFiltersSidebar } from './AllCoursesFiltersSidebar'
-import { AllCoursesGrid } from './AllCoursesGrid'
-import { AllCoursesPageHeader } from './AllCoursesPageHeader'
+import { AllCoursesFiltersSidebar } from './components/AllCoursesFiltersSidebar'
+import { AllCoursesGrid } from './components/AllCoursesGrid'
+import { AllCoursesPageHeader } from './components/AllCoursesPageHeader'
 
 const pageStyles = `.material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -123,7 +123,7 @@ export function AllCoursesPage() {
           </div>
         </main>
 
-        <SiteFooter variant="simple" />
+        <SiteFooter />
       </div>
     </>
   )
