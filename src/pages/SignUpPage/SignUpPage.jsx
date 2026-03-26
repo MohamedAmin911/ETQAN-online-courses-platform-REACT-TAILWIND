@@ -1,1 +1,1 @@
-export { SignUpPage } from './index.jsx'
+export { SignUpPage } from './components/SignUpPageView'

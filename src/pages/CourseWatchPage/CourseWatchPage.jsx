@@ -1,1 +1,1 @@
-export { CourseWatchPage } from './index.jsx'
+export { CourseWatchPage } from './components/CourseWatchPageView'

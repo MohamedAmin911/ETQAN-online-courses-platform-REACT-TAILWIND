@@ -1,1 +1,1 @@
-export { SignInPage } from './index.jsx'
+export { SignInPage } from './components/SignInPageView'
